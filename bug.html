@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    // Attempting to access a non-existent attribute
+    let attributeValue = document.getElementById('myDiv').nonExistentAttribute;
+    console.log(attributeValue); // This will not throw an error but will output 'undefined'
+  </script>
+</body>
+</html>
